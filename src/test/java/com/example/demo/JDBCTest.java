@@ -70,7 +70,7 @@ public class JDBCTest {
 	public void bulkInsert(int rows) throws IOException, SQLException { // example taken from : https://stackoverflow.com/questions/3784197/efficient-way-to-do-batch-inserts-with-jdbc
 		List<List<String>> records = new ArrayList<>();
 		String csvName = "BulkInsert-"+rows;
-		BufferedReader br = new BufferedReader(new FileReader("src\\main\\resources\\BulkInsert-1000000.csv"));
+		BufferedReader br = new BufferedReader(new FileReader("src\\main\\resources\\BulkInsert-1444.csv"));
 
 		String line;
 		int counter = 0;
@@ -119,7 +119,7 @@ public class JDBCTest {
 	public void multipleRowsInsert(int rows) throws IOException, SQLException {
 		List<List<String>> records = new ArrayList<>();
 		String csvName = "BulkInsert-"+rows;
-		BufferedReader br = new BufferedReader(new FileReader("src\\main\\resources\\BulkInsert-1000000.csv"));
+		BufferedReader br = new BufferedReader(new FileReader("src\\main\\resources\\BulkInsert-1444.csv"));
 
 		String line;
 		int counter = 0;
