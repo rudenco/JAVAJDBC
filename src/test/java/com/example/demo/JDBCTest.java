@@ -18,7 +18,7 @@ public class JDBCTest {
 	Statement st ;
 
 	JDBCTest() throws SQLException {
-		this.url = "jdbc:sqlserver://EN410266\\sqlexpress;user=sa3;password=Password@123;databaseName=BikeStores";
+		this.url = "jdbc:sqlserver://COMPNAME\\sqlexpress;user=sa3;password=Password;databaseName=BikeStores";
 		this.connection = DriverManager.getConnection(url);
 		this.readStatement = connection.createStatement( ResultSet.TYPE_SCROLL_INSENSITIVE,ResultSet.CONCUR_READ_ONLY);
 		this.st = connection.createStatement();
