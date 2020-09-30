@@ -6,6 +6,9 @@
 * Delete
 * Bulk Insert
 
+Main project is a SpringBoot application  - additional implementation can be added to link api
+links to CRUD operations so that they can be triggered from browser.
+
 Bulk insert was implemented through 2 different approaches :
  1. PreparedStatement
  2. Using standard insert "Insert INTO table VALUES(v1, v2, ...,vn),(v1, v2, ...,vn);", 
